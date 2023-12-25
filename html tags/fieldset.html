@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(92, 84, 24);">
+    <form style="text-align: center; background-color: rgb(43, 226, 208);
+    padding: 10px;margin: auto; max-width: 500px;height: 700px;"> 
+        <fieldset>
+            <legend><h1>html form</h1></legend>
+            <label><b>first name:</b></label>
+            <input type="text" placeholder="Enter first name">
+            <br><br>
+            <label><b>last name:</b></label>
+            <input type="text" placeholder="Enter last name">
+            <br><br>
+            <label><b>Email:</b></label>
+            <input type="Email" placeholder="Enter Email">
+            <br><br>
+            <label><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" id="myInput"><br><br>
+            <input type="checkbox" onclick="myFunction()">Show Password
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myInput");
+                  if (x.type === "password") {
+                    x.type = "text";
+                  } else {
+                    x.type = "password";
+                  }
+                }
+                </script>
+            <br><br>
+            <leble><b>Phone:</b></leble>
+            <input type="number" placeholder="Enter number">
+            <br><br>
+            <input type="checkbox">
+            <label><b>Male</b></label>
+            <input type="checkbox">
+            <label><b>Female</b></label>
+            <br><br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
